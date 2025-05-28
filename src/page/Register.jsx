@@ -86,11 +86,11 @@ function Register() {
 
       return;
     }
-    if (formData.password.length < 8) {
-      toast.error("Password Must be more 8 letters");
+    if (formData.password.length < 6) {
+      toast.error("Password Must be more 6 letters");
       setFormErr({
         ...formErrMsg,
-        passwordErr: "Password Must be more 8 letters",
+        passwordErr: "Password Must be more 6 letters",
       });
 
       return;
